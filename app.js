@@ -14,7 +14,7 @@ var myConnection  = require('express-myconnection')
  */ 
 var config = require('./config')
 var dbOptions = {
-	host:	  config.database.host,
+	host:	  	config.database.host,
 	user: 	  config.database.user,
 	password: config.database.password,
 	port: 	  config.database.port, 
@@ -109,6 +109,6 @@ app.use(flash())
 app.use('/', index)
 app.use('/users', users)
 
-app.listen(3000, function(){
-	console.log('Server running at port 3000: http://127.0.0.1:3000')
+app.listen(config.server.port, function(){
+	console.log(`Server running on port ${config.server.port}`)
 })
