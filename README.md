@@ -46,13 +46,4 @@ https://aws.amazon.com/blogs/startups/building-a-vpc-with-the-aws-startup-kit/.
       - For `NetworkStackName`, enter the name of the `vpc.cfn.yml` stack you created.
       - For `DatabaseStackName` enter the name of the `db.cfn.yml` stack you created.
       - IMPORTANT: before clicking the Create button in the CloudFormation console, go to the Capabilities section just above the button, and be sure you have checked the checkbox acknowledging that IAM resources will be created.
-
-7. IMPORTANT: Your code will NOT deploy successfully because you have yet to configure the required environment variables. Go to your created `Elastic Beanstalk > Environment > Configuration > Software` and add the following environment variables:
-
-      - `DB_HOST`: Corresponds to `RdsDbURL` of your `db.cfn.yml` stack's Output
-      - `DB_USER`: Corresponds to `DbUser` of your `db.cfn.yml` stack's Output
-      - `DB_PASSWORD`: Corresponds to `DbPassword` of your `db.cfn.yml` stack's Output
-      - `DB_PORT`: Optional, default value of 3306
-      - `DB_SCHEMA`: Optional, default value of 'test'
-
-8. After setting these environment variables, go to `Elastic Beanstalk > Application` and re-deploy the uploaded application version.
+7. Visit your application at `Output > EnvironmentURL`.
