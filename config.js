@@ -4,7 +4,7 @@ var config = {
 		user: 	  process.env.DB_USER,
 		password: process.env.DB_PASSWORD,
 		port: 	 	process.env.DB_PORT || 3306,
-		db: 	  	process.env.DB_SCHEMA || 'test'
+		db: 	  	process.env.DB_NAME || 'test'
 	},
 	server: {
 		port: process.env.PORT || 3000
