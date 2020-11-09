@@ -58,7 +58,7 @@ For CodePipeline, see [AWS's Set up a Continuous Deployment Pipeline](https://aw
 
 ### GitHubAction
 
-For GitHub Action, see [.github/workflows/main.yml](.github/workflows/main.yml). It uses the GitHub Action: [beanstalk-deploy](https://github.com/marketplace/actions/beanstalk-deploy). You will need to set the secrets: `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `APP_NAME`, `ENV_NAME` and `AWS_REGION`.
+For GitHub Action, see [.github/workflows/main.yml](.github/workflows/main.yml.example). It uses the GitHub Action: [beanstalk-deploy](https://github.com/marketplace/actions/beanstalk-deploy). You will need to rename the file as `main.yml`, and set the secrets: `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `APP_NAME`, `ENV_NAME` and `AWS_REGION`.
 
 Make sure your AWS user have sufficient permissions. See this [StackOverflow thread](https://stackoverflow.com/questions/12086198/error-while-deploying-web-application-to-amazon-elastic-beanstalk).
 
