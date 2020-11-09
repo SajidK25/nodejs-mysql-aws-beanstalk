@@ -50,7 +50,15 @@ https://aws.amazon.com/blogs/startups/building-a-vpc-with-the-aws-startup-kit/.
 
 ## CI/CD
 
-To deploy your application to AWS Elastic Beanstalk automatically on push to `master`, see [.github/workflows/main.yml](.github/workflows/main.yml). It uses the GitHub Action: [beanstalk-deploy](https://github.com/marketplace/actions/beanstalk-deploy). You will need to set the secrets: `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `APP_NAME`, `ENV_NAME` and `AWS_REGION`.
+To deploy your application to AWS Elastic Beanstalk automatically on push to `master`, you can use either AWS CodePipeline or GitHub Action.
+
+### CodePipeline
+
+For CodePipeline, see [AWS's Set up a Continuous Deployment Pipeline](https://aws.amazon.com/getting-started/hands-on/continuous-deployment-pipeline/).
+
+### GitHubAction
+
+For GitHub Action, see [.github/workflows/main.yml](.github/workflows/main.yml). It uses the GitHub Action: [beanstalk-deploy](https://github.com/marketplace/actions/beanstalk-deploy). You will need to set the secrets: `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `APP_NAME`, `ENV_NAME` and `AWS_REGION`.
 
 Make sure your AWS user have sufficient permissions. See this [StackOverflow thread](https://stackoverflow.com/questions/12086198/error-while-deploying-web-application-to-amazon-elastic-beanstalk).
 
