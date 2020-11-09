@@ -47,3 +47,9 @@ https://aws.amazon.com/blogs/startups/building-a-vpc-with-the-aws-startup-kit/.
       - For `DatabaseStackName` enter the name of the `db.cfn.yml` stack you created.
       - IMPORTANT: before clicking the Create button in the CloudFormation console, go to the Capabilities section just above the button, and be sure you have checked the checkbox acknowledging that IAM resources will be created.
 7. Visit your application at `Output > EnvironmentURL`.
+
+## CI/CD
+
+To deploy your application to AWS Elastic Beanstalk automatically on push to `master`, see [.github/workflows/main.yml](.github/workflows/main.yml). You will need to set the secrets: `AWS_ACCESS_KEY`, `AWS_SECRET_KEY`, `APP_NAME`, `ENV_NAME` and `AWS_REGION`.
+
+See [Yashwardhan Pauranik's Medium article on 'Deploy to Beanstalk using GitHub Actions'](https://medium.com/commutatus/deploy-to-beanstalk-using-github-actions-20c03e094bf9) for more information.
