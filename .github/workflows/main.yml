@@ -41,8 +41,8 @@ jobs:
       with:
         aws_access_key: ${{secrets.AWS_ACCESS_KEY}}
         aws_secret_key: ${{secrets.AWS_SECRET_KEY}}
-        application_name: ${{secrets.APP_NAME}}
-        environment_name: ${{secrets.ENV_NAME}}
+        application_name: nodejs_mysql_app
+        environment_name: nodejs_mysql_env
         region: ${{secrets.AWS_REGION}}
         version_label: "app-${{ steps.format-time.outputs.replaced }}"
         deployment_package: deploy.zip
